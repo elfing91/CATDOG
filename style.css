@@ -30,7 +30,12 @@ body {
   overflow: hidden;
 }
 
+/*input이 선택되었을 때, 다음에 나오는 형제 마크업 하위의 img선택*/
+.choice-item input:checked + .choice-item-icon img {
+  transform: scale(0.8) translateY(0px)  rotate(30deg);/*클릭되었을 때 애니메이션 동작*/
+}
 .choice-item-icon img {
+  transition: all .4s;
   transform: scale(0.5) translateY(300px);
 
 }
